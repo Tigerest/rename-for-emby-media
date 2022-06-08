@@ -4,7 +4,7 @@ path = r'K:\新番' #rss文件夹
 while True:
     for fname in os.listdir(path): #获取目录，遍历文件名
         if("Komi-san wa, Komyushou Desu." in fname):
-            outputpath = r'I: \media\anime\古見さんは, コミュ症です' #输出路径
+            outputpath = r'K:\media\anime\古見さんは, コミュ症です' #输出路径
             fformat = fname[-3:]  #获取文件格式
             
             #获取集数
@@ -25,7 +25,7 @@ while True:
                 os.renames(old_path, new_path)
         
         if("Summer Time Rendering" in fname):
-            outputpath = r'I: \media\anime\サマータイムレンダ'
+            outputpath = r'K:\media\anime\サマータイムレンダ'
             fformat = fname[-3:]
             ep = ""
             flag = False
